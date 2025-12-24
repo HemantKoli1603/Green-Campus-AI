@@ -1,7 +1,9 @@
+streamlit
 tensorflow
+tf-keras
 google-generativeai
 pillow
 numpy
-streamlit
+
 #it works on python==3.12
 #pip install tf-keras
