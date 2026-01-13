@@ -3,6 +3,6 @@ tensorflow
 tf-keras
 pillow
 numpy
-google-generativeai
+google-genai
 
 #it works on python==3.12

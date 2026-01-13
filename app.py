@@ -3,7 +3,7 @@ import tensorflow as tf
 import tf_keras as keras
 from PIL import Image, ImageOps
 import numpy as np
-import google.generativeai as genai
+from google import genai
 
 
 genai.configure(api_key = st.secrets["GEMINI_API_KEY"])
