@@ -8,7 +8,7 @@ The goal of this project is to promote smart waste segregation using AI and simp
 This project allows users to:
 1.Capture an image of waste using a camera
 2.Classify the waste using a trained ML model (Teachable Machine / Keras)
-3.Identify the type of waste (Plastic, Paper, Organic, etc.)
+3.Identify the type of waste (Plastic, Paper, Organic.)
 4.Get guidance on which bin color the waste should go into
 5.Interact with an AI assistant (Gemini) for short, clean explanations
 
@@ -111,3 +111,5 @@ Google Teachable Machine
 Streamlit Community
 TensorFlow & Keras
 Google Gemini API
+
+You can try it here - https://green-campus-ai.streamlit.app/
