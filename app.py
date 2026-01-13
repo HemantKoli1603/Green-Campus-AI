@@ -6,8 +6,7 @@ import numpy as np
 from google import genai
 
 
-genai.configure(api_key = st.secrets["GEMINI_API_KEY"])
-gemini_model = genai.GenerativeModel('gemini-2.5-flash')
+client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
 
 #2. PERCEPTION LAYER (Model Loading)
 @st.cache_resource
@@ -50,10 +49,10 @@ if img_file:
 
     # Intelligence: Gemini Eco-Fact ---
     with st.spinner("Generating environmental insight..."):
-        prompt = (f"The user has found {label[2:]} waste. Provide a 20-word environmental fact about this material and mention which colored bin it belongs in THere are 3 dustbins red , blue , green also show emoji for the coloured bin for a Green Campus.")
-
         try:
-            response = gemini_model.generate_content(prompt)
+            response = client.models.generate_content(
+                model="gemini-3-flash-preview",
+                contents = f"The user has found {label[2:]} waste. Provide a 20-word environmental fact about this material and mention which colored bin it belongs in THere are 3 dustbins red , blue , green also show emoji for the coloured bin for a Green Campus.")
             st.info(response.text)
         except Exception as e:
             st.error(f"Gemini API Error: {e}")
