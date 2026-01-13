@@ -21,6 +21,8 @@ How the Project Works (Flow)
 6.The result is displayed on the UI
 7.Gemini AI explains the correct bin in one sentence
 <img width="1043" height="900" alt="image" src="https://github.com/user-attachments/assets/e2766827-42a9-49f6-92fc-c2e26b535547" />
+Detailed diagram of our projects work cycle
+
 
 
 🛠️ Technologies Used
@@ -80,6 +82,7 @@ Prediction: Plastic
 AI Response: “This waste should be disposed of in the blue bin.”
 Visual UI feedback using Streamlit
 <img width="1066" height="662" alt="image" src="https://github.com/user-attachments/assets/f7afec89-6f49-4de5-8fd0-b9bfeacaf421" />
+Working
 
 
 
